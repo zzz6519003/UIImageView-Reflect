@@ -25,18 +25,16 @@
     
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
     gradientLayer.bounds = reflectionLayer.bounds;
-    gradientLayer.position = CGPointMake(reflectionLayer.bounds.size.width /2, reflectionLayer.bounds.size.height *0.5);
+    gradientLayer.position = CGPointMake(reflectionLayer.bounds.size.width / 2, reflectionLayer.bounds.size.height * 0.5);
     gradientLayer.colors = [NSArray arrayWithObjects:
                             (id)[[UIColor clearColor] CGColor],
                             (id)[[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.3] CGColor], nil];
+    
     gradientLayer.startPoint = CGPointMake(0.5,0.5);
     gradientLayer.endPoint = CGPointMake(0.5,1.0);
-    // Add gradient layer as a mask
     reflectionLayer.mask = gradientLayer;
     
     [self.superview addSubview:reflectionImageView];
-
-    [self sizeToFit];
 
 }
 
