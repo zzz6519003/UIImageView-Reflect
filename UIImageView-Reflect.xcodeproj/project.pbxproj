@@ -21,6 +21,11 @@
 		1824AB5E18D9ABE00038E24B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1824AB4018D9ABDF0038E24B /* UIKit.framework */; };
 		1824AB6618D9ABE00038E24B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1824AB6418D9ABE00038E24B /* InfoPlist.strings */; };
 		1824AB6818D9ABE00038E24B /* UIImageView_ReflectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824AB6718D9ABE00038E24B /* UIImageView_ReflectTests.m */; };
+		1824AB7318D9AC090038E24B /* UIImageView+Reflect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824AB7218D9AC090038E24B /* UIImageView+Reflect.m */; };
+		1824AB7518D9AD780038E24B /* nvshen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1824AB7418D9AD780038E24B /* nvshen.jpg */; };
+		1824AB7718D9B23B0038E24B /* BuggyImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1824AB7618D9B23B0038E24B /* BuggyImage.png */; };
+		1824AB7A18D9B45C0038E24B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1824AB7918D9B45C0038E24B /* README.md */; };
+		1824AB7D18D9B48B0038E24B /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 1824AB7C18D9B48B0038E24B /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		1824AB6318D9ABE00038E24B /* UIImageView-ReflectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIImageView-ReflectTests-Info.plist"; sourceTree = "<group>"; };
 		1824AB6518D9ABE00038E24B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1824AB6718D9ABE00038E24B /* UIImageView_ReflectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageView_ReflectTests.m; sourceTree = "<group>"; };
+		1824AB7118D9AC090038E24B /* UIImageView+Reflect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Reflect.h"; path = "UIImageView-Reflect/UIImageView+Reflect.h"; sourceTree = "<group>"; };
+		1824AB7218D9AC090038E24B /* UIImageView+Reflect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Reflect.m"; path = "UIImageView-Reflect/UIImageView+Reflect.m"; sourceTree = "<group>"; };
+		1824AB7418D9AD780038E24B /* nvshen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nvshen.jpg; sourceTree = "<group>"; };
+		1824AB7618D9B23B0038E24B /* BuggyImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BuggyImage.png; sourceTree = "<group>"; };
+		1824AB7918D9B45C0038E24B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1824AB7C18D9B48B0038E24B /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +93,9 @@
 		1824AB3018D9ABDF0038E24B = {
 			isa = PBXGroup;
 			children = (
-				1824AB4218D9ABDF0038E24B /* UIImageView-Reflect */,
+				1824AB7918D9B45C0038E24B /* README.md */,
+				1824AB7818D9B4280038E24B /* UIImageView-Reflect */,
+				1824AB4218D9ABDF0038E24B /* UIImageView-Reflect-Demo */,
 				1824AB6118D9ABE00038E24B /* UIImageView-ReflectTests */,
 				1824AB3B18D9ABDF0038E24B /* Frameworks */,
 				1824AB3A18D9ABDF0038E24B /* Products */,
@@ -109,17 +122,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1824AB4218D9ABDF0038E24B /* UIImageView-Reflect */ = {
+		1824AB4218D9ABDF0038E24B /* UIImageView-Reflect-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				1824AB7B18D9B4690038E24B /* Screenshot */,
 				1824AB4B18D9ABDF0038E24B /* AppDelegate.h */,
 				1824AB4C18D9ABDF0038E24B /* AppDelegate.m */,
 				1824AB4E18D9ABDF0038E24B /* Main.storyboard */,
 				1824AB5118D9ABDF0038E24B /* ViewController.h */,
 				1824AB5218D9ABDF0038E24B /* ViewController.m */,
+				1824AB7618D9B23B0038E24B /* BuggyImage.png */,
+				1824AB7418D9AD780038E24B /* nvshen.jpg */,
 				1824AB5418D9ABDF0038E24B /* Images.xcassets */,
 				1824AB4318D9ABDF0038E24B /* Supporting Files */,
 			);
+			name = "UIImageView-Reflect-Demo";
 			path = "UIImageView-Reflect";
 			sourceTree = "<group>";
 		};
@@ -150,6 +167,23 @@
 				1824AB6418D9ABE00038E24B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1824AB7818D9B4280038E24B /* UIImageView-Reflect */ = {
+			isa = PBXGroup;
+			children = (
+				1824AB7118D9AC090038E24B /* UIImageView+Reflect.h */,
+				1824AB7218D9AC090038E24B /* UIImageView+Reflect.m */,
+			);
+			name = "UIImageView-Reflect";
+			sourceTree = "<group>";
+		};
+		1824AB7B18D9B4690038E24B /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				1824AB7C18D9B48B0038E24B /* screenshot.png */,
+			);
+			name = Screenshot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +262,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1824AB7A18D9B45C0038E24B /* README.md in Resources */,
 				1824AB5518D9ABDF0038E24B /* Images.xcassets in Resources */,
+				1824AB7718D9B23B0038E24B /* BuggyImage.png in Resources */,
 				1824AB4718D9ABDF0038E24B /* InfoPlist.strings in Resources */,
 				1824AB5018D9ABDF0038E24B /* Main.storyboard in Resources */,
+				1824AB7D18D9B48B0038E24B /* screenshot.png in Resources */,
+				1824AB7518D9AD780038E24B /* nvshen.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1824AB7318D9AC090038E24B /* UIImageView+Reflect.m in Sources */,
 				1824AB5318D9ABDF0038E24B /* ViewController.m in Sources */,
 				1824AB4D18D9ABDF0038E24B /* AppDelegate.m in Sources */,
 				1824AB4918D9ABDF0038E24B /* main.m in Sources */,

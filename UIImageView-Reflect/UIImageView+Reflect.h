@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIImageView+Reflect.h
 //  UIImageView-Reflect
 //
 //  Created by Snowmanzzz on 3/19/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIImageView (Reflect)
 
-@property (weak, nonatomic) IBOutlet UIImageView *imgView;
+- (void)reflect;
 
 @end
